@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Automação Educacional</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+        <link rel="stylesheet" href="src/css/mediaQuery.css" />
+	</head>
+	<body class="container-body">
+		<main class="container-main">
+			<section class="container-left">
+				<div class="container-left-content">
+					<img class="globo" src="src/assets/globo.svg" alt="Imagem do Globo" />
+					<p class="container-left-text">
+						Bem-vindo ao Programa de Automação Educacional e Sistema de
+						Informação para Pais, desenvolvido para todas as instituições de
+						ensino!
+					</p>
+					<img
+						id="left-img"
+						class="objects"
+						src="src/assets/3d-objects.svg"
+						alt="3d Objects"
+					/>
+				</div>
+			</section>
+			<section class="container-right">
+				<div class="container-right-content">
+					<h1 id="title" class="container-right-title">Conecte-se</h1>
+					<div class="container-right-dropdown">
+						<select class="container-right-dropdown-select" id="type-login">
+							<option value="">Selecione o tipo de login</option>
+							<option value="type-aluno">Aluno</option>
+							<option value="type-professor">Professor</option>
+							<option value="type-pais">Pais</option>
+						</select>
+						<select class="container-right-dropdown-select" id="metodo-login">
+							<option value="">Escolha o método de login</option>
+							<option value="metodo-cpf">CPF</option>
+							<option value="metodo-email">Email</option>
+							<option value="metodo-usuario">Usuário</option>
+						</select>
+					</div>
+					<form id="right-form" class="container-right-form">
+						<div class="conf-label">
+							<label for="cpf">CPF</label>
+						</div>
+						<input
+							class="container-right-form-input"
+							type="text"
+							id="cpf"
+							name="cpf"
+							placeholder="Digite seu cpf"
+							required
+						/>
+						<div class="conf-label">
+							<label for="password">Senha</label>
+						</div>
+						<div class="input-pass">
+							<input
+								class="container-right-form-input"
+								type="password"
+								id="password"
+								name="password"
+								placeholder="Digite sua senha"
+								required
+							/>
+							<img id="eye" class="eye" src="src/assets/eye.svg" alt="Ícone de olho"/>
+						</div>
+						<button
+							id="submit"
+							class="container-right-form-button"
+							type="submit"
+							onclick="resetForm()"
+						>
+							Conecte-se
+						</button>
+						<a id="refresh-pass" class="refresh-pass" href="/">
+							Esqueci minha senha
+						</a>
+						<a id="register" href="/"> Cadastre-se </a>
+						<a id="login" href="/"> Conectar-se </a>
+					</form>
+				</div>
+			</section>
+		</main>
+		<script src="src/javascript/main.js"></script>
+		<script src="src/javascript/eye.js"></script>
+	</body>
+</html>
